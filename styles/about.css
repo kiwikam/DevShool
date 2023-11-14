@@ -1,0 +1,48 @@
+h1, p {
+    margin-bottom: 0;
+}
+
+
+
+.section-about-1 {
+    background: var(--ux-color-8); 
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px var(--ux-color-9) solid;
+}
+
+.bg {
+    background-color: var(--ux-color-6);
+    border-radius: 16px;
+}
+
+.section-point {
+    display: block;
+    position: relative;
+}
+
+.section-about-2 {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+}
+
+.img-position {
+    position: absolute;
+    right: 25%;
+    z-index: -1;
+}
+
+
+.head-text-about {
+    color: var(--text-color-4);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .section-about-2>.text-adress {
+        margin-bottom: 10% !important;
+    }
+}

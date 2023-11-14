@@ -1,0 +1,157 @@
+:root {
+    --ux-color-1: #ffe4d4;
+    --ux-color-2: #e8b89d;
+    --ux-color-3: #816e89;
+    --ux-color-4: #b9ffce;
+    --ux-color-5: #f9f871;
+    --ux-color-6: #2f4858;
+    --ux-color-7: #faf8f2;
+    --ux-color-8: #fff;
+    --ux-color-9: #000;
+    --text-color-1: #dedede;
+    --text-color-2: #2c2523;
+    --text-color-3: #252424;
+    --text-color-4: #6f6e6e;
+    
+    --h-xxl: 32px;
+    --h-xl: 24px;
+    --h-l: 20px;
+    --h-s: 18px;
+    --h-xs: 16px;
+    
+    --p-xl: 18px;
+    --p-l : 16px;
+    --p-s : 14px;
+    --p-xs: 12px;
+}
+
+h1 {font-size: var(--h-xxl);}
+h2 {font-size: var(--h-xl);}
+h3 {font-size: var(--h-l);}
+h4 {font-size: var(--h-s);}
+h5 {font-size: var(--h-xs);}
+.p1 {font-size: var(--p-xl);}
+.p2 {font-size: var(--p-l);}
+.p3 {font-size: var(--p-s);}
+.p4 {font-size: var(--p-xs);}
+
+@media screen and (max-width: 1200px) {
+    
+    h1 {font-size: var(--h-xl);}
+    h2 {font-size: var(--h-l);}
+    h3 {font-size: var(--p-s);}
+    h4 {font-size: var(--p-xs);}
+    h5 {font-size: var(--p-xs);}
+    
+    .p1 {font-size: var(--p-l);}
+    .p2 {font-size: var(--p-s);}
+    .p3 {font-size: var(--p-xs);}
+    .p4 {font-size: var(--p-xs);}
+    
+}
+
+body {
+    background-color: var(--ux-color-7);
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-size: var(--p-l);
+}
+
+.p-navbar {
+    color: var(--text-color-3);
+}
+
+.block-bg-section-1 {
+    background-color: var(--ux-color-1);
+    /*
+    padding-top: 40px;
+    height: 370px;
+    */
+}
+
+.text-section-1 {
+    max-width: 85%;
+}
+
+.btn {
+    background-color: var(--ux-color-8);
+    color: #000;
+    border: 2px solid var(--ux-color-6);
+    border-radius: 16px;
+    box-shadow: -4px 4px 4px 0px rgba(31, 182, 91, 0.5);
+}
+
+.p-section-2 {
+    color: var(--text-color-4);
+
+}
+
+.img-section-2 {
+    width: 50px;
+}
+
+.img-section-3 {
+    display: block;
+    position: relative;
+}
+
+.img-section-3-1 {
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+}
+
+.massege-block {
+    display: block;
+    position: relative;
+    margin-top: 10%;
+}
+
+.massege-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 20%;
+}
+
+.bg-section-4 {
+    background-color: var(--ux-color-1);
+    border: 1px solid var(--ux-color-9);
+    border-radius: 20px;
+}
+
+.input-section-4 {
+    border: 2px solid var(--ux-color-9);
+    border-radius: 12px;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+}
+
+.card-header {
+    background-color: var(--ux-color-8);
+}
+
+.footer-set {
+    background-color: var(--ux-color-8);
+}
+
+.p-footer {
+    color: var(--text-color-3);
+}
+
+@media screen and (max-width: 990px) {
+    .number-footer {
+        font-size: var(--h-l);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .number-footer {
+        font-size: var(--h-s);
+    }
+}
