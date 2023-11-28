@@ -1,0 +1,11 @@
+.bg-section-ab {
+    background-color: var(--ux-color-1);
+    border: 1px solid var(--ux-color-9);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .img-girls {
+        display: none !important;
+    }
+}

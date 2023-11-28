@@ -8,6 +8,7 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
         crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -61,18 +62,17 @@
         <section>
             <div class="container-fluid text-center lg mt-5 block-bg-section-1">
                 <div class="container">
-                    <div class="row row-cols-auto">
-                        <div class="col">
-                            <!--Где-то в этом месте липнет к левому краю, и не центруется...-->
-                            <div class="row pb-5 text-section-1">
+                    <div class="row">
+                        <div class="col my-auto text-start">
+                            <div class="row text-section-1">
                                 <h1>Мы учим для жизни, а не для школы</h1>
                             </div>
-                            <div class="row">
+                            <div class="row mt-4">
                                 <a class="btn btn-primary w-auto px-4 py-3" href="#" role="button">Поступить</a>
                             </div>
                         </div>
-                        <div class="col">
-                            <img class="lg img-fluid my-4" src="img/Block_1.png" alt="Картинка девушек">
+                        <div class="col mt-4">
+                            <img class="img-fluid my-4" src="img/Block_1.png" alt="Картинка девушек">
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
         </section>
         <section>
             <div class="container mt-3 mb-5">
-                <div class="row row-cols-auto justify-content-center">
+                <div class="row justify-content-center">
                     <div class="col img-section-3">
                         <img src="img/Blob.png" alt="" class="img-fluid img-section-3-1">
                         <img src="img/Director.png" alt="" class="img-fluid">
@@ -168,40 +168,47 @@
         </section>
         <section>
             <div class="container my-5">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <div class="card-header mt-3">
-                                <h3>Алексеева Анна</h3>
-                                <p class="p2 p-section-2">родитель ученика 5В класса</p>
+                <!--
+                    Слик-слайдер
+                    UDP: Все еще не работает
+                -->
+                <div class="autoplay">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header mt-3">
+                                    <h3>Алексеева Анна</h3>
+                                    <p class="p2 p-section-2">родитель ученика 5В класса</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">“Прекрасно организованный учебный процесс позволил не только заложить необходимые основы, но и воспитать в моем сыне желание обучаться и развиваться. Обучение всегда сопровождается обратной связью, все вопросы находят свои ответы. Наши учителя не высиживали "от звонка до звонка", а всегда работали на результат!”</p>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">“Прекрасно организованный учебный процесс позволил не только заложить необходимые основы, но и воспитать в моем сыне желание обучаться и развиваться. Обучение всегда сопровождается обратной связью, все вопросы находят свои ответы. Наши учителя не высиживали "от звонка до звонка", а всегда работали на результат!”</p>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header mt-3">
+                                    <h3>Алексеева Анна</h3>
+                                    <p class="p2 p-section-2">родитель ученика 5В класса</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">“Прекрасно организованный учебный процесс позволил не только заложить необходимые основы, но и воспитать в моем сыне желание обучаться и развиваться. Обучение всегда сопровождается обратной связью, все вопросы находят свои ответы. Наши учителя не высиживали "от звонка до звонка", а всегда работали на результат!”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header mt-3">
+                                    <h3>Алексеева Анна</h3>
+                                    <p class="p2 p-section-2">родитель ученика 5В класса</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">“Прекрасно организованный учебный процесс позволил не только заложить необходимые основы, но и воспитать в моем сыне желание обучаться и развиваться. Обучение всегда сопровождается обратной связью, все вопросы находят свои ответы. Наши учителя не высиживали "от звонка до звонка", а всегда работали на результат!”</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <div class="card-header mt-3">
-                                <h3>Алексеева Анна</h3>
-                                <p class="p2 p-section-2">родитель ученика 5В класса</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">“Прекрасно организованный учебный процесс позволил не только заложить необходимые основы, но и воспитать в моем сыне желание обучаться и развиваться. Обучение всегда сопровождается обратной связью, все вопросы находят свои ответы. Наши учителя не высиживали "от звонка до звонка", а всегда работали на результат!”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <div class="card-header mt-3">
-                                <h3>Алексеева Анна</h3>
-                                <p class="p2 p-section-2">родитель ученика 5В класса</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">“Прекрасно организованный учебный процесс позволил не только заложить необходимые основы, но и воспитать в моем сыне желание обучаться и развиваться. Обучение всегда сопровождается обратной связью, все вопросы находят свои ответы. Наши учителя не высиживали "от звонка до звонка", а всегда работали на результат!”</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -311,6 +318,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
+    <!--slick slider все еще не работает...-->    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/scripts/index.js"></script>
 </body>
 </html>

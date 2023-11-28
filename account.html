@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/account.css">
 </head>
 <body>
     <!--
@@ -59,83 +59,25 @@
 
     <main>
         <section>
-            <div class="container text-center section-about-1 py-4">
-                <h1 class="my-3">История школы</h1>
-                <div class="container px-5">
-                    <div class="section-about-table px-3 mx-5-l">
-                        <div class="row align-items-center">
-                            <div class="col-xxl-3">
-                                    <h1 class="py-2 text-white bg w-50">
-                                        2020
-                                    </h1>
-                            </div>
-                            <!--Сжимать этого друга до 3-х строк-->
-                            <div class="col text-start">
-                                <p class="p1">
-                                    Начало строительства школы. Формирование образовательных программ и тщательный подбор будущих учителей.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row align-items-center my-4">
-                            <div class="col-xxl-3">
-                                <h1 class="py-2 text-white bg w-50 w-50">
-                                    2021
-                                </h1>
-                            </div>
-                            <div class="col text-start">
-                                <p class="p1">
-                                    Первые ученики школы переступили её порог 1 сентября 2021 года. Тогда школа получила более 2000 заявок со всего Дальнего Востока. В итоге, 250 учеников 7-9 классов начали свое обучение в нашей школе.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row align-items-center pb-4">
-                            <div class="col-xxl-3">
-                                <h1 class="py-2 text-white bg w-50 w-50">
-                                    2022
-                                </h1>
-                            </div>
-                            <div class="col text-start p">
-                                <p class="p1">
-                                    Более 400 учеников сейчас учатся в стенах нашей школы. Из них 30 детей - совсем малыши, но уже учатся в детском саду.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section>
-            <div class="container my-5">
-                <h1>Как нас найти</h1>
-                <div class="container-xxl px-auto mx-5">
-                    <div class="row row-cols-md-1">
-                        <!--При присвоении класса ( row-cols-auto justify-content-center ) нет переноса правой части блока-->
-
-
-                        <!--
-                            Минимальный размер карты 440px на 440px
-                            После 1200px убирается задний прямоугольник
-                            Центрирование текста после карты (снизу карты)
-                            При ширине экрана меньше 800px, шрифт уменшается
-                            UDP: Все еще съезжает
-                        -->
-                        <div class="col align-middle">
-                            <img src="img/Map_position.png" alt="Карта" class="img-fluid">
-                        </div>
-                        <div class="col section-point">
-                            <img src="img/Bg_rotate.png" alt="" class="img-fluid img-position">
-                            <div class="section-about-2 w-50">
-                                <div class="text-adress mb-5">
-                                    <h3 class="head-text-about mb-3">Адрес школы</h3>
-                                    <h3>Россия, Владивосток, улица Первая, корпус 3</h3>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row mx-5">
+                        <div class="col p-5 text-center bg-section-ab">
+                            <form>
+                                <h1>Вход в личный кабинет</h1>
+                                <p>Введите свои данные для доступа к записи на кружки</p>
+                                <input type="text" class="form-control mb-3 input-section-4" id="exampleInputText" placeholder="Ваше имя">
+                                <input type="password" class="form-control mb-3 input-section-4" id="exampleInputPassword" placeholder="Пароль">
+                                <div class="d-flex justify-content-between">
+                                        <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Нет аккаунта?</a>
+                                        <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Забыли пароль?</a>
                                 </div>
-                                <div class="text-contacts">
-                                    <h3 class="head-text-about mb-3">Наши контакты</h3>
-                                    <h3>+7 999 000 00 00 SchoolOfGorshok@mail.ru</h3>
-                                </div>
-                            </div>
+                                <button type="submit" class="btn mt-4 btn-primary">Войти</button>
+                            </form>
+                        </div>
+                        <!--Сжимать девочку до 1200px (по ширине) и потом убирать (вроде готово)-->
+                        <div class="col img-girls">
+                            <img src="/img/Girl.png" alt="Девочка прыгает вдаль" class="img-fluid">
                         </div>
                     </div>
                 </div>

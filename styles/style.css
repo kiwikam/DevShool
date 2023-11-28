@@ -57,13 +57,13 @@ h5 {font-size: var(--h-xs);}
     h1 {font-size: var(--h-l);}
     h2 {font-size: var(--h-s);}
     h3 {font-size: var(--p-xs);}
-    h4 {font-size: var(--p-xs)-2;}
-    h5 {font-size: var(--p-xs)-2;}
+    h4 {font-size: var(--p-xs);}
+    h5 {font-size: var(--p-xs);}
     
     .p1 {font-size: var(--p-s);}
     .p2 {font-size: var(--p-xs);}
-    .p3 {font-size: var(--p-xs)-2;}
-    .p4 {font-size: var(--p-xs)-2;}
+    .p3 {font-size: var(--p-xs);}
+    .p4 {font-size: var(--p-xs);}
     
 }
 
