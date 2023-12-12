@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О нас</title>
+    <title>Личный кабинет</title>
     <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
@@ -16,9 +16,11 @@
 </head>
 <body>
     <!--
-        Git Pages: 
-            /DevShool - Главная
-            /DevShool/about.html - О нас
+    Git Pages: 
+        /DevShool - Главная 
+        /DevShool/about.html - О нас
+        /DevShool/entry.html - Поступление
+        /DevShool/account.html - Личный кабинет
     -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
@@ -43,7 +45,7 @@
                     <a class="nav-link active" href="#">Наша команда</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Поступление</a>
+                    <a class="nav-link active" href="/DevShool/entry.html">Поступление</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="#">Образование</a>
@@ -62,20 +64,19 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row mx-5">
-                        <div class="col p-5 text-center bg-section-ab">
+                        <div class="col p-5 my-auto text-center bg-section-ab">
                             <form>
                                 <h1>Вход в личный кабинет</h1>
                                 <p>Введите свои данные для доступа к записи на кружки</p>
                                 <input type="text" class="form-control mb-3 input-section-4" id="exampleInputText" placeholder="Ваше имя">
                                 <input type="password" class="form-control mb-3 input-section-4" id="exampleInputPassword" placeholder="Пароль">
                                 <div class="d-flex justify-content-between">
-                                        <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Нет аккаунта?</a>
-                                        <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Забыли пароль?</a>
+                                    <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Нет аккаунта?</a>
+                                    <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Забыли пароль?</a>
                                 </div>
                                 <button type="submit" class="btn mt-4 btn-primary">Войти</button>
                             </form>
                         </div>
-                        <!--Сжимать девочку до 1200px (по ширине) и потом убирать (вроде готово)-->
                         <div class="col img-girls">
                             <img src="/img/Girl.png" alt="Девочка прыгает вдаль" class="img-fluid">
                         </div>
@@ -158,7 +159,7 @@
                             </a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">
+                            <a href="/DevShool/account.html" class="nav-link p-0 text-body-secondary">
                                 <p class="p2 p-footer">
                                     Личный кабинет
                                 </p>

@@ -1,0 +1,120 @@
+.bg-section-entry {
+    background-color: var(--ux-color-2);
+}
+
+.card-header {
+    padding: 1.7em;
+}
+
+ul {
+    /*не выравнивается маркер для списка, нужно решить*/
+    list-style-image: url(/img/list.svg);
+}
+
+@media screen and (min-width: 1400px) {
+    .crd-header {
+        padding: 1.7em 1em;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .row {
+        text-align: center;
+    }
+
+    .col h2 {
+        font-size: var(--h-xxl);
+    }
+    
+    .col p {
+        font-size: var(--p-l);
+    }
+    
+    .col li {
+        font-size: var(--p-xl);
+    }
+
+    .col .p3 {
+        font-size: var(--p-xl);
+    }
+    
+    .card-text ul {
+        padding-left: 0;
+    }
+    
+    .card-text, .p3 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .row {
+        text-align: center;
+    }
+
+    .col {
+        min-width: 99%;
+    }
+
+    .col h2 {
+        font-size: var(--h-xl);
+    }
+    
+    .col p {
+        font-size: var(--p-s);
+    }
+    
+    .col li {
+        font-size: var(--p-s);
+    }
+
+    .col .p3 {
+        font-size: var(--p-s);
+    }
+    
+    .card-text ul {
+        padding-left: 0;
+    }
+
+    .card-text, .p3 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .row {
+        text-align: center;
+    }
+
+    .col {
+        min-width: 99%;
+    }
+
+    .col h2 {
+        font-size: var(--h-s);
+    }
+    
+    .col p {
+        font-size: var(--p-xs);
+    }
+    
+    .col li {
+        font-size: var(--p-xs);
+    }
+
+    .col .p3 {
+        font-size: var(--p-xs);
+    }
+    
+    .card-text ul {
+        padding-left: 0;
+    }
+
+    .card-text, .p3 {
+        text-align: left;
+    }
+
+    .card-header, .card-body, .card-footer {
+        padding: 0;
+    }
+}

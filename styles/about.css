@@ -39,10 +39,59 @@ h1, p {
     color: var(--text-color-4);
 }
 
+@media screen and (max-width: 1400px) {
+    .section-about-2 h3 {
+        font-size: var(--h-s);
+    }
+}
 
 @media screen and (max-width: 1200px) {
 
-    .section-about-2>.text-adress {
+    .text-adress {
         margin-bottom: 10% !important;
+    }
+
+    .img-position {
+        display: none;
+    }
+
+    .section-point {
+        position: static;
+        text-align: center !important;
+    }
+
+    .section-about-2 {
+        position: static;
+        background-color: var(--ux-color-1);
+        border: 1px solid var(--ux-color-9);
+        border-radius: 20px;
+    }
+
+    .section-about-2 h3 {
+        font-size: var(--h-l);
+    }
+
+    .head-text-about-2 {
+        width: 96%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .section-about-2 h3 {
+        font-size: var(--h-xs);
+        padding-left: auto !important;
+        padding-right: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-about-2 h3 {
+        font-size: var(--p-xs);
+    }
+
+    .col-xxl-3 h1 {
+        max-width: 91%;
+        min-width: 60px;
     }
 }
