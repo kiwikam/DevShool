@@ -72,6 +72,10 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
+ul {
+    padding-left: 0px !important;
+}
+
 .navbar-brand {
     font-size: var(--p-l);
 }
@@ -92,13 +96,84 @@ body {
     max-width: 85%;
 }
 
-.btn {
+.button-1 {
+    display: inline-flex;
+    height: 50px;
+    width: 150px;
+    border: 2px solid var(--ux-color-9);
     background-color: var(--ux-color-8);
-    color: #000;
-    border: 2px solid var(--ux-color-6);
     border-radius: 16px;
-    box-shadow: -4px 4px 4px 0px rgba(31, 182, 91, 0.5);
+    color: var(--ux-color-9);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+
+a {
+    color: var(--ux-color-9);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+span {
+    color: var(--ux-color-9);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+ 
+#button-7 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+#button-7 a {
+    position: relative;
+    left: 0;
+    transition: all .35s ease-Out;
+}
+
+#button-7 span {
+    position: relative;
+    left: 0;
+    transition: all .35s ease-Out;
+}
+
+#dub-arrow {
+    width: 100%;
+    height: 100%;
+    background: var(--ux-color-4);
+    left: -200px;
+    position: absolute;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-Out;
+    bottom: 0;
+}
+  
+#button-7 img {
+    width: 20px;
+    height: auto;
+}
+  
+#button-7:hover #dub-arrow {
+    left: 0;
+}
+ 
+#button-7:hover a {
+    left: 150px;
+}
+
+#button-7:hover span {
+    left:150px;
+}
+
 
 .p-section-2 {
     color: var(--text-color-4);
@@ -188,6 +263,14 @@ body {
     .massege-text {
         max-width: 100%;
         top: 10%;
+    }
+
+    .navbar {
+        margin-bottom: .5em !important;
+    }
+
+    .footer-set .row {
+        margin-top: .5em !important;
     }
 
     .massege-block {

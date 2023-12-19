@@ -1,0 +1,102 @@
+ul li {
+    list-style: none;
+}
+
+.section-screen-min-width-1200px {
+    display: none;
+}
+
+.bg-section-teams {
+    background-color: var(--ux-color-8);
+    border: 1px solid var(--ux-color-6);
+    border-radius: 20px;
+}
+
+.font-screen h3 {
+    font-size: var(--h-l);
+    font-weight: 600;
+}
+
+.font-screen h4 {
+    font-size: var(--h-s);
+    font-weight: 600;
+}
+
+.font-screen li {
+    font-size: var(--p-l);
+}
+
+.teams-header {
+    width: 18%;
+}
+
+@media screen and (max-width: 1400px) {
+    .button-1 {
+        width: 130px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .section-screen-max-width-1200px {
+        display: none;
+    }
+    
+    .section-screen-min-width-1200px {
+        display: block;
+    }
+
+    .button-1 {
+        width: 100%;
+        border: none;
+        border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+        background-color: var(--ux-color-8);
+    }
+
+    #dub-arrow {
+        left: -100%;
+        transition: all .65s ease-Out;
+    }
+    #button-7 a {
+        transition: all .65s ease-Out;
+    }
+
+    #button-7:hover a {
+        left: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .font-screen li {
+        text-align: center;
+    }
+    
+    .font-screen h4 {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .font-screen h3 {
+        font-size: var(--h-xs);
+        font-weight: 600;
+    }
+    
+    .font-screen h4,.btn-teams {
+        font-size: var(--p-s);
+        font-weight: 600;
+    }
+    
+    .font-screen li {
+        font-size: var(--p-xs);
+    }
+}
+  
+@media screen and (min-width:1000px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    #container {
+        width: 50%;
+    }
+}

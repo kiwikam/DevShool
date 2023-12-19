@@ -81,7 +81,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 370px) {
     .row {
         text-align: center;
     }
