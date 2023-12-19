@@ -293,3 +293,27 @@ span {
         font-size: var(--p-xs) !important;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .massege-text h5 {
+        font-size: calc(var(--p-xs) - 10%) !important;
+    }
+
+    .massege-text .p2 {
+        font-size: calc(var(--p-xs) - 15%) !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .massege-text h5 {
+        font-size: calc(var(--p-xs) - 20%) !important;
+    }
+
+    .massege-text .p2 {
+        font-size: calc(var(--p-xs) - 25%) !important;
+    }
+
+    .massege-text p, h5 {
+        margin-bottom: .5em;
+    }
+}
