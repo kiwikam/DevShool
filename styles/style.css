@@ -78,6 +78,12 @@ ul {
 
 .navbar-brand {
     font-size: var(--p-l);
+    white-space: inherit;
+    width: 12em;
+}
+
+.navbar-brand span {
+    margin-left: 1em;
 }
 
 .p-navbar {
