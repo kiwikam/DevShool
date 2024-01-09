@@ -1,0 +1,160 @@
+.nav-set-2 {
+    display: none !important;
+}
+
+.block-menu-img {
+    width: 25px;
+}
+
+/*
+    Так как .col-3 = wigth: 25%, это больше, чем нужно по ширине
+*/
+.block-menu {
+    width: 20% !important;
+}
+
+.bg-circle {
+    background-color: var(--ux-color-7);
+    border: 3px solid green;
+    width: 4em;
+    height: 4em;
+}
+
+.table-set {
+    padding: .7em !important;
+}
+
+.thead-set {
+    font-size: var(--p-xl);
+    background-color: var(--ux-color-1) !important;
+}
+
+.tbody-set {
+    font-size: var(--p-l);
+    min-width: 100px;
+}
+
+.thead-1, .tbody-1 {
+    width: 15%;
+}
+
+.thead-2, .thead-3, .tbody-2, .tbody-3 {
+    min-width: 30px;
+}
+
+.thead-4, .tbody-4 {
+    width: 28%;
+}
+
+.thead-5, .tbody-5 {
+    width: 22%;
+}
+
+.tbody-3, .tbody-2 {
+    font-weight: 600;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1400px) {
+    .p1 {
+        font-size: var(--p-xl);
+    }
+    
+    .p-set, .tbody-set {
+        font-size: var(--p-s);
+    }
+
+    h3 {
+        font-size: var(--h-s);
+    }
+
+    .thead-set {
+        font-size: var(--p-l);
+    }
+
+    .block-menu a {
+        font-size: var(--p-xs);
+    }
+
+    .block-menu-img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {    
+    .nav-set-1, .p-navbar {
+        display: none;
+    }
+
+    .nav-set-2 {
+        display: flex !important;
+    }
+    
+    .p-set {
+        font-size: var(--p-xs);
+    }
+
+    .block-menu {
+        display: none;
+    }
+
+    .bg-circle .p-set{
+        font-size: var(--p-s);
+    }
+
+    .date-set {
+        font-size: var(--p-l);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .col-empty {
+        display: none !important;
+    }
+
+    .fs-info-set .p2 {
+        font-size: var(--p-l);
+    }
+
+    .score .p2 {
+        font-size: var(--p-l);
+    }
+
+    .avatar {
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    main {
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .tbody-set {
+        font-size: var(--p-xs)
+    }
+
+    .avatar {
+        margin-bottom: 2em;
+    }
+
+    .fs-info-set .p2, .thead-set, .score .p2 {
+        font-size: var(--p-s);
+    }
+
+    .fw-bold {
+        font-size: var(--p-l);
+    }
+
+    .bg-circle {
+        width: 2em;
+        height: 2em;
+    }
+}

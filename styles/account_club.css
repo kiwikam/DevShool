@@ -1,0 +1,26 @@
+.club-set-1 {
+    display: none !important;
+}
+
+.p-set-2 {
+    font-size: var(--p-s);
+    margin-top: 1em;
+}
+
+.tbody-set {
+    width: 20%;
+}
+
+.today {
+    background-color: var(--ux-color-4) !important;
+}
+
+@media screen and (max-width:1200px) {
+    .club-set-1 {
+        display: block !important;
+    }
+
+    .p-set-2 {
+        font-size: var(--p-xs);
+    }
+}

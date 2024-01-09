@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой дневник</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/account_tasks.css">
+</head>
+<body>
+    <!--
+    Git Pages: 
+        /DevShool               - Главная 
+        /DevShool/about.html    - О нас
+        /DevShool/teams.html    - Наша команда
+        /DevShool/entry.html    - Поступление
+        /DevShool/education.html- Образование
+        /DevShool/account.html  - Личный кабинет
+    -->
+    <header>
+        <nav class="navbar navbar-expand-xl bg-body-tertiary mb-5">
+            <div class="container my-2">
+                <a class="navbar-brand d-inline-flex align-items-center" href="/DevShool">
+                    <img src="img/Gorshok.png" alt="">
+                    <span>
+                        Частная школа им. Горшенева
+                    </span>
+                </a>
+          
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto nav-set-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/DevShool">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/DevShool/about.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/DevShool/teams.html">Наша команда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/DevShool/entry.html">Поступление</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/DevShool/education.html">Образование</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/DevShool/account.html">Личный кабинет</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto nav-set-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/DevShool/account_club.html">
+                                <img src="img/Account/Task.png" class="block-menu-img">
+                                Мои кружки
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/DevShool/account_tasks.html">
+                                <img src="img/Account/CheckBook.png" class="block-menu-img">
+                                Дневник
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <img src="img/Account/Settings.png" class="block-menu-img">
+                                Настройки
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/DevShool/account.html">
+                                <img src="img/Account/ChangeAccount.png" class="block-menu-img">
+                                Сменить аккаунт
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger" href="/DevShool/account.html">
+                                <img src="img/Account/Exit.png" class="block-menu-img">
+                                Выйти
+                            </a>
+                        </li>
+                    </ul>
+
+                    <span class="navbar-text p1 p-navbar">
+                        +7 999 000 00 00
+                    </span>
+                </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 block-menu">
+                            <div class="card p-4">
+                                <a href="/DevShool/account_tasks.html" class="p2 p-set">
+                                    <img src="img/Account/Task.png" class="block-menu-img">
+                                    Мои кружки
+                                </a>
+                                <a href="/DevShool/account_tasks.html" class="p2 p-set my-3">
+                                    <img src="img/Account/CheckBook.png" class="block-menu-img">
+                                    Дневник
+                                </a>
+                                <a href="#" class="p2 p-set">
+                                    <img src="img/Account/Settings.png" class="block-menu-img">
+                                    Настройки
+                                </a>
+                                <a href="/DevShool/account.html" class="p2 p-set border-top my-3 pt-3">
+                                    <img src="img/Account/ChangeAccount.png" class="block-menu-img">
+                                    Сменить аккаунт
+                                </a>
+                                <a href="/DevShool/account.html" class="p2 p-set text-danger">
+                                    <img src="img/Account/Exit.png" class="block-menu-img">
+                                    Выйти
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col block-main">
+                            <div class="card p-4">
+
+                                <!--Нужно, чтобы разделить этот раздел-->
+                                <section class="mb-5">
+                                    <div class="row row-cols-1 row-cols-sm-1 align-items-center justify-content-center">
+                                        <div class="col col-lg-2  d-flex justify-content-center">
+                                            <img src="img/Account/Avatar.png" class="img-fluid avatar">
+                                        </div>
+                                        <div class="col col-md-10 col-lg-7 mb-md-5 my-sm-4">
+                                            <h3 class="fw-bold">Иванова Алина Вячеславовна</h3>
+                                            <div class="row row-cols-sm-3 pt-3 fs-info-set">
+                                                <div class="col">
+                                                    <p class="p2 p-set m-1">Класс</p>
+                                                    <p class="p2 p-set">4 "Б" класс</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="p2 p-set m-1">Email</p>
+                                                    <p class="p2 p-set">alina@mail.com</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="p2 p-set m-1">Номер телефона</p>
+                                                    <p class="p2 p-set">+7 000 000 00 00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-md-5 col-lg-3">
+                                            <div class="row score">
+                                                <div class="col">
+                                                    <p class="p2 p-set fw-bold">Ср. балл</p>
+                                                    <div class="bg-circle rounded-circle d-flex align-items-center justify-content-center p-3">
+                                                        <p class="p2 p-set text-center mb-0">4,5</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="p2 p-set fw-bold">Посещаемость</p>
+                                                    <div class="bg-circle rounded-circle d-flex align-items-center justify-content-center p-3">
+                                                        <p class="p2 p-set text-center mb-0">83%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 col-empty"></div>
+                                    </div>
+                                </section>
+
+                                <p class="p2 p-set date-set"><< 03.03.2023 - Вторник >></p>
+
+                                <section>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered border-dark m-0">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th class="table-set thead-set thead-1">Предмет</th>
+                                                    <th class="table-set thead-set thead-2">ДЗ</th>
+                                                    <th class="table-set thead-set thead-3">В кл.</th>
+                                                    <th class="table-set thead-set thead-4">Комментаний по занятию</th>
+                                                    <th class="table-set thead-set thead-5">Домашнее задание</th>
+                                                    <th class="table-set thead-set thead-6">Педагог</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-set tbody-set tbody-1">8:30 - 9:15 Математика</td>
+                                                    <td class="table-set tbody-set tbody-2">5</td>
+                                                    <td class="table-set tbody-set tbody-3"></td>
+                                                    <td class="table-set tbody-set tbody-4">На уроке задавал хорошие вопросы</td>
+                                                    <td class="table-set tbody-set tbody-5">У. стр. 12-14, №3-9</td>
+                                                    <td class="table-set tbody-set tbody-6">Хандошко И.В.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-set tbody-set tbody-1">9:25 - 10:10 Русский язык</td>
+                                                    <td class="table-set tbody-set tbody-2"></td>
+                                                    <td class="table-set tbody-set tbody-3">5</td>
+                                                    <td class="table-set tbody-set tbody-4">Не смог грамотноописать образ Горшка</td>
+                                                    <td class="table-set tbody-set tbody-5"></td>
+                                                    <td class="table-set tbody-set tbody-6">Лагутин Ч.Н.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-set tbody-set tbody-1">10:20 - 11:05 История</td>
+                                                    <td class="table-set tbody-set tbody-2"></td>
+                                                    <td class="table-set tbody-set tbody-3"></td>
+                                                    <td class="table-set tbody-set tbody-4">Отсутствовал на уроке - пел Цоя в туалете</td>
+                                                    <td class="table-set tbody-set tbody-5">Сочинение: Потенциал радикальных субкультур</td>
+                                                    <td class="table-set tbody-set tbody-6">Шибаем Н.Р.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-set tbody-set tbody-1">11:20 - 13:05 ОБЖ</td>
+                                                    <td class="table-set tbody-set tbody-2"></td>
+                                                    <td class="table-set tbody-set tbody-3">2</td>
+                                                    <td class="table-set tbody-set tbody-4">Мешал спать классу</td>
+                                                    <td class="table-set tbody-set tbody-5"></td>
+                                                    <td class="table-set tbody-set tbody-6">Важников В.В.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="container-fluid footer-set">
+        <div class="container">
+            <div class=" row py-5 mt-5">
+                <div class="col-2 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Наша история
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Наш коллектив
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Связаться с нами
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-2 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Поступление
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Стоимость
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Условия обучения
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-2 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Для обучающихся
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Запись на кружки
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="/DevShool/account.html" class="nav-link p-0 text-body-secondary">
+                                <p class="p2 p-footer">
+                                    Личный кабинет
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3"></div>
+                <div class="col mb-3">
+                    <h1>+7 999 000 00 00</h1>
+                    <div class="row">
+                        <div class="col ms-1">
+                            <img src="img/WhatsApp.svg" alt="" class="img-fluid footer-icons">
+                        </div>
+                        <div class="col ms-2">
+                            <img src="img/Github.svg" alt="" class="img-fluid footer-icons">
+                        </div>
+                        <div class="col ms-2">
+                            <img src="img/Twitch.svg" alt="" class="img-fluid footer-icons">
+                        </div>
+                        <div class="col ms-2">
+                            <img src="img/Google.svg" alt="" class="img-fluid footer-icons">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+</html>
